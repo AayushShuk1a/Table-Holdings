@@ -18,6 +18,8 @@ function App() {
     });
   },[]);
 
+  
+
 
 
   const realEstate = data.filter(item => item.asset_class === 'Real Estate');
@@ -26,15 +28,10 @@ function App() {
   const equity = data.filter(item => item.asset_class === 'Equity');
   const loan = data.filter(item => item.asset_class === 'Loan');
 
-  console.log('Real Estate:', realEstate);
-  console.log('Cash:', cash);
-  console.log('Bonds:', bonds);
-  console.log('Equity:', equity);
-  console.log('Loan:', loan);
   
 
   return (
-    <Container>
+    <Container maxWidth="false">
       <Typography variant="h3" gutterBottom>
         Asset Classes
       </Typography>
